@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dragonfly Café - Contacto</title>
+  <link rel="icon" href="assets/icono.png" type="image/x-icon">
+  <meta name="description" content="Formulario accesible de contacto.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header" role="banner">
+    <div class="container">
+      <nav class="site-nav" aria-label="Principal">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="proyecto.html">Proyecto</a></li>
+          <li><a href="contacto.html" aria-current="page">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido" tabindex="-1">
+    <section class="container">
+      <div class="contact-form">
+        <h1>Contacto</h1>
+      </div>
+      <div class="wrap-form">
+        <form class="form" id="contactForm" aria-describedby="ayuda-form">
+          <p id="ayuda-form">Los campos marcados con <span aria-hidden="true">*</span> son obligatorios.</p>
+
+          <div class="form-control">
+            <label for="nombre">Nombre <span aria-hidden="true">*</span></label>
+            <input id="nombre" name="nombre" type="text" required autocomplete="name" placeholder="Ingrese su nombre y apellido">
+          </div>
+
+          <div class="form-control">
+            <label for="email">Correo <span aria-hidden="true">*</span></label>
+            <input id="email" name="email" type="email" required autocomplete="email" placeholder="Ingrese su correo electrónico">
+          </div>
+          <div class="form-control">
+            <label for="asunto">Asunto</label>
+            <input id="asunto" name="asunto" type="text" placeholder="Breve descripción de su proyecto">
+          </div>
+          <div class="form-control">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe algo que nos quieras decir"></textarea>
+          </div>
+          <div class="form-control form-check">
+            <label for="acepto"><input id="acepto" name="acepto" type="checkbox" required> Acepto ser contactado por correo <span aria-hidden="true">*</span></label>
+          </div>
+          <p id="form-status" aria-live="polite"></p>
+          <button class="button" id="submitButton" type="submit">Enviar</button>        
+        </form>
+      </div>
+    </section>
+      <aside class="container note">
+        <h2>¿Qué pasa después?</h2>
+        <p>Te responderemos en 24–48 h con una guía de próximos pasos y un checklist de accesibilidad inicial.</p>
+      </aside>
+
+      <!-- Agrego un link a un script -->
+      <script src="js/form.js" defer></script>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="anio">2025</span> Dragonfly <span class="u-visually-hidden">Todos los derechos reservados.</span></p>
+      <ul>
+      <li><a href="https://www.instagram.com/">
+        <img class="redes" src="assets/insta.png" width="600" height="400" alt="Descripcion de la imagen.">
+      </a></li>
+      <li><a href="https://www.x.com/">
+        <img class="redes" src="assets/twitter.png" width="600" height="400" alt="Descripcion de la imagen.">
+      </a></li>
+      <li><a href="https://www.tiktok.com/">
+        <img class="redes" src="assets/tik-tok.png" width="600" height="400" alt="Descripcion de la imagen.">
+      </a></li>
+    </ul>
+    </div>
+  </footer>
+</body>
+</html>
